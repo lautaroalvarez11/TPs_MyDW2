@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 0</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <!-- Barra de navegación -->
+        <header>
+            <!-- h3 en la parte izquierda -->
+            <div class="left-header">
+                <h3>Página TP0</h3>
+            </div>
+
+            <div class="right-header">
+                <ul>
+                    <li class="dropdown">
+                        <button class="dropbtn"> Gestionar </button>
+                        <div id="dropdown-options" class="dropdown-content">
+                            <a href="index.html"> Inicio</a>
+                            <a href="login.html"> Iniciar Sesión </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Imagen de fondo -->
+        <main class="background-image"> </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>Desarrollado por Lautaro Álvarez</p>
+        </footer>
+
+        <!-- Scripts para el menú -->
+        <script>
+            document.addEventListener('DOMContentLoaded', (event) => {
+                const dropdownButton = document.querySelector('.dropbtn');
+                const dropdownContent = document.getElementById('dropdown-options');
+
+                dropdownButton.addEventListener('click', () => {
+                    dropdownContent.classList.toggle('show');
+                });
+
+                window.addEventListener('click', (event) => {
+                    if (!event.target.matches('.dropbtn')) {
+                        if (dropdownContent.classList.contains('show')) {
+                            dropdownContent.classList.remove('show');
+                        }
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>

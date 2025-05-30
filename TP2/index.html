@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        <header>
+            <!-- h3 en la parte izquierda -->
+            <div class="left-header">
+                <h3>Página TP2</h3>
+            </div>
+        </header>
+
+        <!-- Imágen -->
+        <div class="left-header2">
+            <h3>Maradona tomando mate</h3>
+        </div>
+        <img
+            src="https://i.pinimg.com/736x/3a/95/36/3a953678793f4c3c1bbb13b0d48eccea.jpg"
+            alt="Maradona tomando mate con la madre"
+        />
+
+        <!-- Audio -->
+        <div class="left-header3">
+            <h3>Reproducir audio</h3>
+        </div>
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg"> <!-- Cambiar audio.mp3 por la dirección del audio para reproducir algún audio -->
+            <p> 
+                Tu navegador no soporta el elemento de audio.
+            </p>
+        </audio>
+
+        <!-- Video -->
+        <div class="left-header4">
+            <h3>Reproducir video</h3>
+        </div>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pMoENrA6Crc" frameborder="0" allowfullscreen> </iframe>
+
+        <!-- Gráfico vectorial -->
+        <div class="left-header5">
+            <h3>Elemento SVG</h3>
+        </div>
+        <svg width="300" height="200">
+            <rect width="100%" height="100%" fill="blue" />
+        </svg>
+
+        <!-- Pie de página -->
+        <footer>
+            <p>Desarrollado por Lautaro Álvarez</p>
+        </footer>
+
+        <!-- JavaScript básico -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                console.log("Página cargada correctamente");
+            });
+        </script>
+
+    </body>
+</html>

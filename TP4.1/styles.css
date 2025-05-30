@@ -1,0 +1,81 @@
+/* Importar fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: white;
+    height: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 0px;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 0px;
+    margin-top: auto;
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #00ffff;
+    text-align: center;
+}
+
+/* Caja base */
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* --- TRANSICIÓN --- */
+.transition-box {
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+.transition-box:hover {
+    background-color: #ff4081;
+    transform: scale(1.2);
+}
+
+/* --- ANIMACIÓN --- */
+.animation-box {
+    animation: cambiarEstilo 2s ease-in-out infinite alternate;
+}
+
+@keyframes cambiarEstilo {
+    from {
+        background-color: #444;
+        transform: scale(1);
+    }
+    to {
+        background-color: #4caf50;
+        transform: scale(1.2);
+    }
+}

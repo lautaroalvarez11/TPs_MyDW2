@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 4</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- h3 en la parte izquierda -->
+        <div class="left-header">
+            <h3>Página TP4</h3>
+        </div>
+    </header>
+
+    <main> <!-- Nuevo -->
+        <div class="animation-container">
+            <h3>Animación</h3>
+            <spline-viewer url="https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode"></spline-viewer>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Desarrollado por Lautaro Álvarez</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Página cargada correctamente");
+        });
+    </script>
+</body>
+</html>

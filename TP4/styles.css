@@ -1,0 +1,72 @@
+/* Importar fuente Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Estilos globales */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0e0d;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0 20px;
+    height: 80px;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Contenedor del título */
+.left-header h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Estilos del contenedor de la animación */
+.animation-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Estilos del título de la animación */
+.animation-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Ajustes para la animación */
+spline-viewer {
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos del footer */
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+}
+
+/* Hacer que html y body ocupen toda la altura de la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* El main ocupa todo el espacio libre */
+main {
+    flex: 1;
+}

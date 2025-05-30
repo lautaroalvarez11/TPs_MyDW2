@@ -1,0 +1,81 @@
+/* Estilos globales */
+body
+{
+    font-family: Montserrat;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0e0d;
+}
+
+/* Estilos para el contenedor del h3 */
+.left-header
+{
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el h3 del header */
+.left-header h3
+{
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+/* Estilos para el h3 de la imágen */
+.left-header2 h3
+{
+    color: white;
+    font-size: 1em;
+    margin: 1;
+}
+
+/* Estilos para el h3 del audio */
+.left-header3 h3
+{
+    color: white;
+    font-size: 1em;
+    margin: 1;
+}
+
+/* Estilos para el h3 del video */
+.left-header4 h3
+{
+    color: white;
+    font-size: 1em;
+    margin: 1;
+}
+
+/* Estilos para el h3 del gráfico vectorial */
+.left-header5 h3
+{
+    color: white;
+    font-size: 1em;
+    margin: 1;
+}
+
+header
+{
+    display: flex; /* Flexbox para organizar los elementos */
+    justify-content: space-between; /* Espacio entre izquierda y derecha */
+    align-items: center; /* Alineación vertical centrada */
+    background-color: #333;
+    padding: 0 20px; /* Espaciado a los lados */
+    height: 80px; /* Altura del header */
+    border-bottom: 2px solid #ccc; /* Borde inferior */
+}
+
+/* Estilos del footer */
+footer
+{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+}
+
+footer p
+{
+    margin: 0;
+}
