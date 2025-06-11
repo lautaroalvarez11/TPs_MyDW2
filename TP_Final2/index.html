@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajo Final - Maquetación y Desarrollo Web II</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Trabajo Práctico Final</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi" class="grid-layout">
+            <div class="texto">
+                <h2>Sobre mí</h2>
+                <p>
+                    Soy estudiante de la TUDDAM. Esta página fue creada como trabajo final del curso, aplicando HTML, CSS, diseño responsive, elementos 3D, animaciones y contenidos multimedia variados.
+                </p>
+            </div>
+            <div class="spline-box">
+                <spline-viewer url="https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode"></spline-viewer>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos personales</h2>
+            <div class="flex-layout">
+                <a href="https://github.com/lautaroalvarez11/TPs_MyDW2" target="_blank" class="proyecto">
+                    Proyecto 1
+                </a>
+                <a href="https://github.com/lautaroalvarez11/TPs_PFS" target="_blank" class="proyecto">
+                    Proyecto 2
+                </a>
+                <a href="https://github.com/lautaroalvarez11/TPs_EdD" target="_blank" class="proyecto">
+                    Proyecto 3
+                </a>
+            </div>
+        </section>
+
+        <section id="multimedia">
+            <h2>Galería multimedia</h2>
+            <div class="media-gallery">
+                <div class="media-item">
+                    <p>Imagen</p>
+                    <img src="imagenes/foto_tp.jpg" alt="Imagen de diseño" title="Imagen de diseño" />
+                </div>
+                <div class="media-item">
+                    <p>Video</p>
+                    <video controls>
+                        <source src="videos/Video.mp4" type="video/mp4" />
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                </div>
+                <div class="media-item">
+                    <p>Audio</p>
+                    <audio controls>
+                        <source src="audios/Audio_video.mp3" type="audio/mp3" />
+                        Tu navegador no soporta la reproducción de audio.
+                    </audio>
+                </div>
+                <div class="media-item">
+                    <p>SVG</p>
+                    <img src="imagenes/icono.svg" alt="Icono SVG" title="Icono SVG" />
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Lautaro Álvarez - Trabajo Final de Maquetación y Desarrollo Web II</p>
+    </footer>
+</body>
+</html>
